@@ -1,10 +1,10 @@
 # database.py
-import psycopg2
+import psycopg
 
 from config import DB_CONFIG
 
 def get_connection():
-    return psycopg2.connect(**DB_CONFIG)
+    return psycopg.connect(**DB_CONFIG)
 
 def get_schema(conn):
     cursor = conn.cursor()

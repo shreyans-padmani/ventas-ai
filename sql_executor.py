@@ -1,9 +1,9 @@
 # sql_executor.py
-import psycopg2
+import psycopg
 from config import DB_CONFIG
 
 def execute_sql(query):
-    conn = psycopg2.connect(**DB_CONFIG)
+    conn = psycopg.connect(**DB_CONFIG)
     cursor = conn.cursor()
     try:
         cursor.execute(query)

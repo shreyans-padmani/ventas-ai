@@ -1,6 +1,6 @@
 import os
 import re
-import psycopg2
+import psycopg
 import requests
 import pandas as pd
 
@@ -15,7 +15,7 @@ import pandas as pd
 # -------------------------------
 def get_connection():
     try:
-        conn = psycopg2.connect(**DB_CONFIG)
+        conn = psycopg.connect(**DB_CONFIG)
         print("✅ Connected to PostgreSQL")
         return conn
     except Exception as e:
