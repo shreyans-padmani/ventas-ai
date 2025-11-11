@@ -13,7 +13,7 @@ chat_memory = defaultdict(list)
 class ChatRequest(BaseModel):
     session_id: str
     message: str
-
+    
 @app.get("/")
 def root():
     return {"status": "ok", "message": "AI SQL API is running"}
@@ -24,9 +24,10 @@ def chat(data: ChatRequest):
     user_msg = data.message
 
     try:
-        # Build conversational context
+        # Build conversational context (last few turns)
         context = "\n".join([f"User: {m['user']}\nAI: {m['ai']}" for m in history[-3:]])
 
+        # Combine history into a contextual question
         contextual_question = f"""
 You are an intelligent SQL assistant.
 Previous conversation:
@@ -43,7 +44,7 @@ Otherwise, generate a new SQL query.
         result = execute_sql(sql)
         answer = explain_result(user_msg, sql, result)
 
-        # Save conversation state
+        # Save to memory
         history.append({"user": user_msg, "ai": answer, "sql": sql})
 
         return {

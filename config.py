@@ -12,3 +12,5 @@ DB_CONFIG = {
 }
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "your-api-key")
+GOOGLE_API_KEY = os.getenv("GEMINI_API_KEY", "your-api-key")
+MODEL_NAME = "gemini-2.0-flash"

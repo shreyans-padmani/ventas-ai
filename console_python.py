@@ -7,15 +7,8 @@ import pandas as pd
 # -------------------------------
 # 🔐 CONFIGURATION
 # -------------------------------
-GOOGLE_API_KEY = "AIzaSyDO540rkV5cQf1S-P6mRWZfyU2f0ToeYMw"
 
-DB_CONFIG = {
-    "dbname": "Ventas_Ai_DB",
-    "user": "Ventas_Ai_User",
-    "password": "Ventas_Ai!Pw",
-    "host": "168.231.120.235",
-    "port": "5432",
-}
+
 
 # -------------------------------
 # 📦 DATABASE CONNECTION
