@@ -1,5 +1,3 @@
-# === SQL AI Evaluator Requirements ===
-python-3.12.4
 requests==2.32.3
 pandas==2.2.3
 fastapi
