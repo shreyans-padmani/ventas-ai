@@ -75,7 +75,7 @@ test-results.xml
 # Project-specific
 # =======================================
 # Ignore local configuration, credentials, or secrets
-config.py
+#config.py
 config_local.py
 .env
 .env.*
