@@ -1,0 +1,117 @@
+# =======================================
+# Python
+# =======================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.pdb
+*.so
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+develop-eggs/
+.installed.cfg
+MANIFEST
+pip-wheel-metadata/
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# =======================================
+# IDE / Editor settings
+# =======================================
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+
+# =======================================
+# OS / Environment files
+# =======================================
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+*.bak
+*.log
+
+# =======================================
+# Virtual environments / Python cache
+# =======================================
+*.pyc
+*.pyo
+__pycache__/
+.pytest_cache/
+.cache/
+.mypy_cache/
+coverage.xml
+htmlcov/
+.coverage
+*.cover
+*.coverage
+nosetests.xml
+test-results.xml
+.pyre/
+.pytype/
+.tox/
+.hypothesis/
+
+# =======================================
+# Jupyter / Notebook
+# =======================================
+.ipynb_checkpoints/
+*.ipynb_convert/
+*.nbconvert/
+
+# =======================================
+# Project-specific
+# =======================================
+# Ignore local configuration, credentials, or secrets
+config.py
+config_local.py
+.env
+.env.*
+secrets.json
+*.db
+*.sqlite3
+
+# =======================================
+# Logs & Debugging
+# =======================================
+*.log
+logs/
+debug.log
+
+# =======================================
+# OS Files
+# =======================================
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# =======================================
+# Packaging / Distribution
+# =======================================
+*.manifest
+*.spec
+*.ini
+
+# =======================================
+# Python Bytecode Cache
+# =======================================
+*.pyc
+__pycache__/
+
+# =======================================
+# Temporary Files
+# =======================================
+tmp/
+temp/

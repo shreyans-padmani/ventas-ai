@@ -1,0 +1,6 @@
+question,generated_sql,reference,status,evaluation
+What was the lead of stage 2,"SELECT * FROM ""lead"" WHERE ""stageid"" = 2;","SELECT ""name"" FROM ""stage"" WHERE ""sequence"" = 2.00;",✅ Executed successfully,❌ Not matching
+What are the names of all stages in the stage table?,"SELECT ""name"" FROM ""stage"";","SELECT ""name"" FROM ""stage"";",✅ Executed successfully,✅ Exact match
+List all user names from the user table.,"SELECT ""username"" FROM ""User"";","SELECT ""username"" FROM ""User"";",✅ Executed successfully,✅ Exact match
+Find the companyaddress of all agency in the agency table.,"SELECT ""companyaddress"" FROM ""agency"";","SELECT ""companyaddress"" FROM ""agency"";",✅ Executed successfully,✅ Exact match
+What is the name of the lead with lead Index = 1,"SELECT ""companyname"" FROM ""lead"" WHERE ""leadid"" = 1;","SELECT ""companyname"" FROM ""lead"" WHERE ""leadid"" = 1;",✅ Executed successfully,✅ Exact match
