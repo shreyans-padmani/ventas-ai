@@ -4,6 +4,8 @@ from text_to_sql import text_to_sql
 from sql_executor import execute_sql
 from llm_interpreter import explain_result
 from collections import defaultdict
+import os
+import uvicorn
 
 app = FastAPI()
 
@@ -58,3 +60,7 @@ Otherwise, generate a new SQL query.
 
     except Exception as e:
         return {"success": False, "error": str(e)}
+    
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    uvicorn.run("main:app", host="0.0.0.0", port=port)
