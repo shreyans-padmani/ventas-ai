@@ -5,6 +5,7 @@ class ExampleRetriever:
     """
     Simple in-memory retriever using a small embedding model (all-MiniLM-L6-v2).
     Examples must be a list of dicts: {'user': <user text>, 'sql': <sql text>}.
+    
     """
     def __init__(self, examples=None, model_name="all-MiniLM-L6-v2"):
         self.model = SentenceTransformer(model_name)
