@@ -33,14 +33,8 @@ RUN pip install --no-cache-dir --user google-generativeai
 # 4. Install pandas (can be slow)
 RUN pip install --no-cache-dir --user pandas==2.2.3
 
-# 5. Install PyTorch CPU-only (smaller, faster)
-RUN pip install --no-cache-dir --user \
-    torch==2.1.0 \
-    --index-url https://download.pytorch.org/whl/cpu || \
-    pip install --no-cache-dir --user torch==2.1.0
-
-# 6. Install sentence-transformers last (uses installed torch)
-RUN pip install --no-cache-dir --user sentence-transformers==2.2.2
+# 5. Install numpy (for embeddings)
+RUN pip install --no-cache-dir --user numpy
 
 # Final runtime stage
 FROM python:3.11-slim
